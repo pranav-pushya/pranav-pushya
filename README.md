@@ -1,6 +1,6 @@
 <div align="center">
 
-![Pranav Pushya — Build. Understand. Iterate.](assets/header.svg)
+![Pranav Pushya — Cyber Command Center & AI Neural HUD](assets/cyber-command-center.svg)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranav-pushya/)
 [![Email](https://img.shields.io/badge/Email-pushyapranav24%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:pushyapranav24@gmail.com)
@@ -11,24 +11,11 @@
 
 ## ⚡ Primary Identity & Context
 
-<table>
-<tr>
-<td width="40%" valign="top" align="center">
-
-<img src="assets/cyber-portrait.svg" alt="Pranav Pushya - Cyber Biometric Neural Portrait" width="100%"/>
-
-</td>
-<td width="60%" valign="middle">
-
 I am an **AI/ML & Cybersecurity Builder** (Applied AI & Security Developer) and 2nd-year CSE (AI/ML) undergraduate at **Chitkara University** (Expected 2029 · CGPA 8.4).
 
 Full-stack development is my **execution layer** (FastAPI, React, Firebase, Supabase), while **AI/ML** (LLMs, RAG, MediaPipe, Computer Vision) and **Cybersecurity** (Zero Trust, ethical hacking sandboxes, client-side PII protection) are my core differentiators.
 
 > *Building systems that solve hard, practical problems—engineered to be explained and audited, not just shipped.*
-
-</td>
-</tr>
-</table>
 
 <img src="assets/signal.svg" width="100%" alt="" />
 
