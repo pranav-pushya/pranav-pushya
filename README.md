@@ -21,20 +21,7 @@ I like the space where understanding a system turns into building something usef
 <tr>
 <td width="50%" valign="top">
 
-### 01 / PwnBox
-
-**A place to explore cybersecurity.**
-
-Browser-based, hands-on learning for people curious about ethical hacking, designed around safe practice.
-
-`Cybersecurity` · `Interactive learning`
-
-[Explore the repository ↗](https://github.com/pranav-pushya/Pwnbox)
-
-</td>
-<td width="50%" valign="top">
-
-### 02 / Scaffold
+### 01 / Scaffold
 
 **A workspace for the developer journey.**
 
@@ -45,6 +32,19 @@ Profiles, Kanban task tracking, portfolio showcases, resume exports, and an AI a
 [Explore the repository ↗](https://github.com/pranav-pushya/Scaffold) · [Try the app ↗](https://scaffold-app-90278.web.app)
 
 </td>
+<td width="50%" valign="top">
+
+### 02 / FaceVerse-AR
+
+**An interactive browser-based AR playground.**
+
+Turns webcam video and facial expressions into game controllers, musical instruments, and interactive 3D art—all processed privately on-device.
+
+`Computer Vision` · `MediaPipe` · `Three.js` · `WebGL`
+
+[Explore the repository ↗](https://github.com/pranav-pushya/FaceVerse-AR) · [Try the app ↗](https://pranav-pushya.github.io/FaceVerse-AR/)
+
+</td>
 </tr>
 </table>
 
@@ -52,9 +52,9 @@ Profiles, Kanban task tracking, portfolio showcases, resume exports, and an AI a
 
 Technologies used across my projects:
 
-| Languages & interfaces | Backend & integrations |
-| :--- | :--- |
-| JavaScript · HTML · CSS | Firebase Authentication · Cloud Firestore · Groq API |
+| Languages & interfaces | Vision & Graphics | Backend & integrations |
+| :--- | :--- | :--- |
+| JavaScript · HTML · CSS | MediaPipe · Three.js · WebGL | Firebase Authentication · Cloud Firestore · Groq API |
 
 ## What keeps me curious
 
