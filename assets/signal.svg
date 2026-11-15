@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="28" viewBox="0 0 960 28" role="img" aria-label="Animated signal divider">
+<defs><linearGradient id="g"><stop stop-color="#55e5ed" stop-opacity="0"/><stop offset=".5" stop-color="#55e5ed"/><stop offset="1" stop-color="#aa94ff" stop-opacity="0"/></linearGradient></defs>
+<path d="M0 14H960" stroke="#788aa5" stroke-opacity=".22"/>
+<rect x="-180" y="13" width="180" height="2" rx="1" fill="url(#g)"><animate attributeName="x" from="-180" to="960" dur="8s" repeatCount="indefinite"/></rect>
+</svg>
