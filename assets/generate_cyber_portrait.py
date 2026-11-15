@@ -2,44 +2,43 @@
 """
 generate_cyber_portrait.py
 --------------------------
-Converts a portrait photo into an advanced Cyber-Biometric Neural HUD animated SVG
-for Pranav Pushya's GitHub profile (assets/cyber-portrait.svg).
+Converts Pranav Pushya's photo into an advanced Cyber-Biometric Neural HUD animated SVG
+for the GitHub profile README (assets/cyber-portrait.svg).
 
 Features:
-- Adaptive luminance mapping with edge & subject-aware background suppression.
-- High-fidelity 14-character density ramp.
-- Cyber theme gradient matching Pranav's engineering lab header (#0b1326, #55e5ed, #a692ff, #f0f5ff).
+- High-fidelity 14-character density ramp (" ·.:;=-+*#%@&$").
+- Precision face & upper-torso crop with background luminance suppression.
+- Cyber theme gradient matching Pranav's engineering lab header:
+    #28344c (dark navy) -> #7160dd (neon violet) -> #a692ff (electric lavender) -> #55e5ed (cyan) -> #f0f5ff (white)
 - Dual-phase SMIL animation:
-  1. Matrix-style typewriter decryption reveal row-by-row with tracking cursor.
-  2. Continuous post-typing living HUD: Biometric laser scanner sweep + pulsing telemetry reticles.
-- 100% pure SVG with SMIL animations: natively supported by GitHub's markdown renderer.
+    Phase 1: Line-by-line typewriter matrix decryption reveal with tracking reticle cursor.
+    Phase 2: Continuous post-typing living HUD with a holographic biometric laser scanner sweep.
+- Fully self-contained pure SVG (100% compliant with GitHub markdown sanitization rules).
 """
 
 import argparse
 import sys
-from PIL import Image, ImageOps, ImageEnhance
+from PIL import Image
 
-# Character density ramp from darkest to brightest
 RAMP = " ·.:;=-+*#%@&$"
 
-# Cyber theme gradient stops (0.0 = darkest shadow -> 1.0 = brightest highlight)
 GRADIENT_STOPS = [
     (0.00, (40, 52, 76)),     # Deep slate/navy (#28344c)
-    (0.25, (113, 96, 221)),   # Neon purple (#7160dd)
-    (0.60, (166, 146, 255)),  # Electric violet (#a692ff)
-    (0.85, (85, 229, 237)),   # Electric cyan (#55e5ed)
+    (0.22, (113, 96, 221)),   # Neon purple (#7160dd)
+    (0.55, (166, 146, 255)),  # Electric violet (#a692ff)
+    (0.82, (85, 229, 237)),   # Electric cyan (#55e5ed)
     (1.00, (240, 245, 255)),  # Holographic white (#f0f5ff)
 ]
 
-FONT_SIZE = 12.5
-CHAR_W = FONT_SIZE * 0.605
-LINE_H = FONT_SIZE * 1.18
-PAD_X = 24
-PAD_Y = 18
-TITLEBAR_H = 38
-FOOTERBAR_H = 36
-TYPE_SPEED = 0.016
-ROW_GAP = 0.015
+FONT_SIZE = 12.0
+CHAR_W = FONT_SIZE * 0.60
+LINE_H = FONT_SIZE * 1.16
+PAD_X = 22
+PAD_Y = 16
+TITLEBAR_H = 36
+FOOTERBAR_H = 34
+TYPE_SPEED = 0.015
+ROW_GAP = 0.014
 
 
 def lerp(a, b, t):
@@ -68,7 +67,7 @@ def escape(s):
     )
 
 
-def image_to_ascii_grid(image_path, cols, rows, crop=(0.08, 0.02, 0.92, 0.88)):
+def image_to_ascii_grid(image_path, cols, rows, crop=(0.05, 0.04, 0.95, 0.76)):
     img = Image.open(image_path).convert("RGB")
     w, h = img.size
     
@@ -85,7 +84,7 @@ def image_to_ascii_grid(image_path, cols, rows, crop=(0.08, 0.02, 0.92, 0.88)):
         for c in range(cols):
             p = small.getpixel((c, r))
             # Background suppression: if pixel is pure/near white
-            if p[0] > 232 and p[1] > 232 and p[2] > 232:
+            if p[0] > 235 and p[1] > 235 and p[2] > 235:
                 row.append((" ", "#28344c"))
             else:
                 lum = 0.299 * p[0] + 0.587 * p[1] + 0.114 * p[2]
@@ -102,7 +101,7 @@ def image_to_ascii_grid(image_path, cols, rows, crop=(0.08, 0.02, 0.92, 0.88)):
 
 
 def group_row(row):
-    """Collapse consecutive characters of the same color into single spans."""
+    """Collapse consecutive characters of identical color into single tspans."""
     groups = []
     cur_char, cur_color = row[0]
     cur_run = cur_char
@@ -184,10 +183,9 @@ def build_cyber_svg(grid, cols, rows):
     cursor_x_vals_attr = ";".join(f"{v:.2f}" for v in cursor_x_values)
     cursor_x_keytimes_attr = ";".join(f"{t:.5f}" for t in norm_keytimes)
     
-    # Coordinates for reticles and scanline
     reticle_inset = 6
     top_y = TITLEBAR_H + PAD_Y - 4
-    bottom_y = top_y + content_h + 10
+    bottom_y = top_y + content_h + 8
     
     svg = f'''<svg viewBox="0 0 {width:.0f} {height:.0f}" xmlns="http://www.w3.org/2000/svg"
      role="img" aria-label="Pranav Pushya - Cyber Biometric Neural Portrait">
@@ -204,9 +202,9 @@ def build_cyber_svg(grid, cols, rows):
     </linearGradient>
     <linearGradient id="laserGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#55e5ed" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#55e5ed" stop-opacity="0.6"/>
+      <stop offset="15%" stop-color="#55e5ed" stop-opacity="0.7"/>
       <stop offset="50%" stop-color="#f0f5ff" stop-opacity="0.95"/>
-      <stop offset="85%" stop-color="#a692ff" stop-opacity="0.6"/>
+      <stop offset="85%" stop-color="#a692ff" stop-opacity="0.7"/>
       <stop offset="100%" stop-color="#a692ff" stop-opacity="0"/>
     </linearGradient>
     <filter id="cyberGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -294,10 +292,10 @@ def build_cyber_svg(grid, cols, rows):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate Cyber Biometric Neural Portrait SVG.")
-    parser.add_argument("--input", default="assets/avatar.png", help="Input image path")
+    parser.add_argument("--input", default="assets/avatar.jpg", help="Input image path")
     parser.add_argument("--output", default="assets/cyber-portrait.svg", help="Output SVG path")
-    parser.add_argument("--cols", type=int, default=46, help="Character columns")
-    parser.add_argument("--rows", type=int, default=26, help="Character rows")
+    parser.add_argument("--cols", type=int, default=48, help="Character columns")
+    parser.add_argument("--rows", type=int, default=28, help="Character rows")
     args = parser.parse_args()
 
     grid = image_to_ascii_grid(args.input, args.cols, args.rows)
