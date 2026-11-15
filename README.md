@@ -2,70 +2,126 @@
 
 ![Pranav Pushya — Build. Understand. Iterate.](assets/header.svg)
 
-[![LinkedIn](https://img.shields.io/badge/LET'S_CONNECT-LinkedIn-256675?style=flat-square&labelColor=101827)](https://www.linkedin.com/in/pranav-pushya/)
-[![Projects](https://img.shields.io/badge/EXPLORE-My_Projects-665495?style=flat-square&labelColor=101827)](https://github.com/pranav-pushya?tab=repositories)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranav-pushya/)
+[![Email](https://img.shields.io/badge/Email-pushyapranav24%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:pushyapranav24@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Repositories-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/pranav-pushya?tab=repositories)
+[![Azure Certified](https://img.shields.io/badge/Microsoft_Certified-Azure_Data_Fundamentals_(DP--900)-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)](https://www.linkedin.com/in/pranav-pushya/)
 
 </div>
 
-## A little context
+## ⚡ Primary Identity & Context
 
-I'm **Pranav**, a **Computer Science Engineering student specializing in AI/ML at Chitkara University**. My interests span computer vision, cybersecurity, and tools that make development easier.
+I am an **AI/ML & Cybersecurity Builder** (Applied AI & Security Developer) and 2nd-year CSE (AI/ML) undergraduate at **Chitkara University** (Expected 2029 · CGPA 8.4).
 
-I like the space where understanding a system turns into building something useful. Here are a few projects from that journey.
+Full-stack development is my **execution layer** (FastAPI, React, Firebase, Supabase), while **AI/ML** (LLMs, RAG, MediaPipe, Computer Vision) and **Cybersecurity** (Zero Trust, ethical hacking sandboxes, client-side PII protection) are my core differentiators. I focus on building systems that solve hard, practical problems—engineered to be explained and audited, not just shipped.
 
 <img src="assets/signal.svg" width="100%" alt="" />
 
-## Selected builds
+## 🚀 Featured Systems & Builds
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 01 / Scaffold
+### 01 / TRUSTGRID
 
-**A workspace for the developer journey.**
+**Zero Trust OT/SCADA Water Pipeline Simulation**
 
-Profiles, Kanban task tracking, portfolio showcases, resume exports, and an AI assistant in one workspace.
+A software simulation of an industrial OT/SCADA water pipeline secured using Zero Trust architecture principles. Built and presented at **NexHack 2.0 (IITM Janakpuri)**.
 
-`JavaScript` · `Firebase` · `Groq API`
+* **Key Focus:** OT/SCADA security, Zero Trust segmentation, real-time telemetry anomaly monitoring.
+* **Contribution:** Core architecture and simulation/backend logic.
+* **Tech:** `FastAPI` · `Python` · `React` · `Zero Trust`
 
-[Explore the repository ↗](https://github.com/pranav-pushya/Scaffold) · [Try the app ↗](https://scaffold-app-90278.web.app)
+[Explore Repository ↗](https://github.com/armaankhan2905/CTRL-ALT-TRUST)
 
 </td>
 <td width="50%" valign="top">
 
-### 02 / FaceVerse-AR
+### 02 / PrivacyLens (PS-004)
 
-**An interactive browser-based AR playground.**
+**Client-Side Privacy & PII Redaction Engine**
 
-Turns webcam video and facial expressions into game controllers, musical instruments, and interactive 3D art—all processed privately on-device.
+A privacy-first Chrome Extension and web app that scans and redacts sensitive PII locally before data ever leaves the user's browser. Built for **PECathon 2026**.
 
-`Computer Vision` · `MediaPipe` · `Three.js` · `WebGL`
+* **Key Focus:** Zero server-side leakage, offscreen canvas blackout masking, Verhoeff/Luhn checksum validation pipelines, and local RAG scanning.
+* **Contribution:** End-to-end browser extension engineering, checksum validation, and local masking engine.
+* **Tech:** `JavaScript` · `Canvas API` · `RAG Scanning` · `Chrome Extensions`
 
-[Explore the repository ↗](https://github.com/pranav-pushya/FaceVerse-AR) · [Try the app ↗](https://pranav-pushya.github.io/FaceVerse-AR/)
+[Explore Repository ↗](https://github.com/PECathon-2026/05-HoneyPoters)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 03 / PwnBox
+
+**Interactive Cybersecurity Learning Sandbox**
+
+A browser-based, hands-on platform designed for safe ethical hacking and cybersecurity exploration.
+
+* **Key Focus:** Realistic attack vectors, social engineering defense mechanics, and hands-on defensive exercises in a zero-setup sandbox.
+* **Contribution:** Solo creator — platform architecture, lab modules, and full-stack implementation.
+* **Tech:** `Cybersecurity` · `JavaScript` · `Interactive Labs`
+
+[Explore Repository ↗](https://github.com/pranav-pushya/Pwnbox) · [Live App ↗](https://pwnbo-x.web.app)
+
+</td>
+<td width="50%" valign="top">
+
+### 04 / Scaffold
+
+**Unified Developer Growth & Identity Workspace**
+
+A unified workspace consolidating developer profiles, Kanban workflow tracking, live portfolio showcase, ATS resume export, and an AI assistant.
+
+* **Key Focus:** Developer productivity, automated portfolio generation, and contextual AI workflows.
+* **Contribution:** Full-stack architecture, Firestore integration, and Groq LLM pipelines.
+* **Tech:** `React` · `Firebase Auth & Firestore` · `Groq API`
+
+[Explore Repository ↗](https://github.com/pranav-pushya/Scaffold) · [Live App ↗](https://scaffold-app-90278.web.app/)
 
 </td>
 </tr>
 </table>
 
-## My toolkit
+> **Notable R&D & Applied Vision:**
+> * **SwachhSort AI** — Two-stage vision pipeline (YOLO11m + MobileNetV2 + Depth Anything V2 pseudo-LiDAR) for automated conveyor-belt waste sorting. *(Patent filed on multi-sensor fusion approach)*.
+> * **CogniFlow** — Passive-signal fatigue detection system using MediaPipe face landmarks to dynamically adapt UI at Hack Helix (TIET).
+> * **FaceVerse-AR** — On-device browser AR playground using MediaPipe FaceMesh, Three.js, and WebGL ([Live Demo](https://pranav-pushya.github.io/FaceVerse-AR/)).
 
-Technologies used across my projects:
+<img src="assets/signal.svg" width="100%" alt="" />
 
-| Languages & interfaces | Vision & Graphics | Backend & integrations |
-| :--- | :--- | :--- |
-| JavaScript · HTML · CSS | MediaPipe · Three.js · WebGL | Firebase Authentication · Cloud Firestore · Groq API |
+## 🛠️ Technical Arsenal
 
-## What keeps me curious
+### Comfortably Build With (Production / Hackathon Ready)
+| Domain | Technologies & Frameworks |
+| :--- | :--- |
+| **Languages** | Python, JavaScript (ES6+), C / C++, Java, HTML5, CSS3, SQL (MySQL) |
+| **AI & Applied ML** | Groq API, LLM Integration, RAG Pipelines, MediaPipe, Prompt Engineering, YOLO11m |
+| **Full-Stack & Backend** | FastAPI, React, Vite, Firebase (Auth & Firestore), Supabase, Netlify, Vercel |
+| **Security & Systems** | Linux (Kali, WSL, Arch), Git / GitHub, Docker, Client-Side PII Masking, Zero Trust Architecture |
 
-**01 — Computer vision**  
-How machines turn pixels into useful information.
+### Currently Exploring & Leveling Up
+* **Cybersecurity:** Web application penetration testing, Zero Trust architecture, social engineering defense, OSINT
+* **AI Systems:** Autonomous AI agents, Model Context Protocol (MCP)
+* **Mobile Engineering:** Native Android development (Accessibility Services & floating UI overlays)
 
-**02 — Cybersecurity**  
-How systems behave, where they fail, and how to make them safer.
+<img src="assets/signal.svg" width="100%" alt="" />
 
-**03 — Developer tools**  
-How thoughtful software can make everyday work easier.
+## 🏆 Achievements, Roles & Hackathons
+
+* **Patent Filed:** Multi-sensor fusion approach for automated waste classification (*SwachhSort AI*).
+* **Certifications:** Microsoft Certified: Azure Data Fundamentals (**DP-900**).
+* **Leadership & Community:** Technical Team Member at **Code 2 Chill** (mentoring peers and organizing developer hackathons).
+* **Hackathons & Competitions:**
+  * **NexHack 2.0 (IITM Janakpuri)** — *TRUSTGRID* (Zero Trust OT/SCADA Simulation)
+  * **PECathon (Punjab Engineering College)** — *PrivacyLens* (Client-Side PII Defense)
+  * **Hack Helix (Thapar University)** — Product Owner, Team *OOPtimal Minds* (*CogniFlow*)
+  * **Adobe University Hackathon 2026**
+  * **Graviton (CGC Mohali)**
+  * **ET AI Hackathon**
 
 <img src="assets/signal.svg" width="100%" alt="" />
 
@@ -73,9 +129,9 @@ How thoughtful software can make everyday work easier.
 
 ### Interesting problems make good conversations.
 
-AI, cybersecurity, or something useful you're building—let's exchange ideas.
+Open for **internship opportunities**, **AI & security engineering collaborations**, and **hackathons**.
 
-[**Find me on LinkedIn ↗**](https://www.linkedin.com/in/pranav-pushya/)
+[**Email Me ↗**](mailto:pushyapranav24@gmail.com) &nbsp;&bull;&nbsp; [**Connect on LinkedIn ↗**](https://www.linkedin.com/in/pranav-pushya/) &nbsp;&bull;&nbsp; [**Explore Repositories ↗**](https://github.com/pranav-pushya?tab=repositories)
 
 <sub>Understand it. Build it. Keep learning.</sub>
 
