@@ -1,0 +1,151 @@
+<svg viewBox="0 0 960 280" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="Pranav Pushya — Classified Intelligence Dossier &amp; Neural HUD">
+  <title>Pranav Pushya — AI/ML &amp; Cybersecurity Builder</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&amp;display=swap');
+      text { font-family: 'JetBrains Mono', -apple-system, BlinkMacSystemFont, monospace; }
+    </style>
+    <linearGradient id="bgHero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070c18"/>
+      <stop offset="50%" stop-color="#050811"/>
+      <stop offset="100%" stop-color="#090e1c"/>
+    </linearGradient>
+    <linearGradient id="neonBorder" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#55e5ed"/>
+      <stop offset="50%" stop-color="#a692ff"/>
+      <stop offset="100%" stop-color="#55e5ed"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0f5ff"/>
+      <stop offset="50%" stop-color="#55e5ed"/>
+      <stop offset="100%" stop-color="#a692ff"/>
+    </linearGradient>
+    <pattern id="gridHero" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1e2d44" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+    <filter id="glowHero" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="heroClip">
+      <rect x="0" y="0" width="960" height="280" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#heroClip)">
+    <!-- Canvas & Grid -->
+    <rect width="960" height="280" fill="url(#bgHero)"/>
+    <rect width="960" height="280" fill="url(#gridHero)"/>
+
+    <!-- 15A: Subtle Matrix Hex Rain in Flanking Margins -->
+    <g font-size="10.5" fill="#55e5ed" opacity="0.16">
+      <text x="24" y="0">0 1 A 7 F 2<animate attributeName="y" values="30;300" dur="5.5s" repeatCount="indefinite"/></text>
+      <text x="72" y="0">C 9 E 0 4 B<animate attributeName="y" values="-30;300" dur="6.8s" repeatCount="indefinite"/></text>
+      <text x="122" y="0">F F 0 1 8 D<animate attributeName="y" values="60;300" dur="4.9s" repeatCount="indefinite"/></text>
+      <text x="810" y="0">7 F 2 A 0 E<animate attributeName="y" values="-10;300" dur="5.2s" repeatCount="indefinite"/></text>
+      <text x="862" y="0">1 0 C 4 9 B<animate attributeName="y" values="50;300" dur="6.4s" repeatCount="indefinite"/></text>
+      <text x="914" y="0">A 3 E 8 0 1<animate attributeName="y" values="10;300" dur="4.6s" repeatCount="indefinite"/></text>
+    </g>
+
+    <!-- 8B: Dual Oscilloscope Signal Waves (Background) -->
+    <g opacity="0.45">
+      <path d="M0,222 Q120,192 240,222 T480,222 T720,222 T960,222" fill="none" stroke="#55e5ed" stroke-width="1.6">
+        <animate attributeName="d" dur="5s" repeatCount="indefinite"
+                 values="M0,222 Q120,192 240,222 T480,222 T720,222 T960,222;M0,222 Q120,252 240,222 T480,222 T720,222 T960,222;M0,222 Q120,192 240,222 T480,222 T720,222 T960,222"/>
+      </path>
+      <path d="M0,228 Q140,255 280,228 T560,228 T840,228 T960,228" fill="none" stroke="#a692ff" stroke-width="1.2">
+        <animate attributeName="d" dur="6.5s" repeatCount="indefinite"
+                 values="M0,228 Q140,255 280,228 T560,228 T840,228 T960,228;M0,228 Q140,200 280,228 T560,228 T840,228 T960,228;M0,228 Q140,255 280,228 T560,228 T840,228 T960,228"/>
+      </path>
+    </g>
+
+    <!-- 8C: Classified Dossier Top Bar -->
+    <rect x="0" y="0" width="960" height="40" fill="#080d1a"/>
+    <line x1="0" y1="40" x2="960" y2="40" stroke="#22324d" stroke-width="1.2"/>
+    <circle cx="24" cy="20" r="4.5" fill="#55e5ed">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="38" y="24" font-size="11" font-weight="700" fill="#eab308" letter-spacing="1.4">
+      [CLASSIFIED BRIEFING // FILE #PRN-2026]
+    </text>
+    <text x="480" y="24" text-anchor="middle" font-size="10.5" fill="#8d9eb8" letter-spacing="1.5">
+      CLEARANCE: <tspan fill="#55e5ed" font-weight="700">LEVEL 05 · ZERO-TRUST</tspan>
+    </text>
+    <text x="936" y="24" text-anchor="end" font-size="10.5" font-weight="700" fill="#22c55e" letter-spacing="1.2">
+      ● VERIFIED BUILDER
+    </text>
+
+    <!-- 15B: Neural Synaptic Pathways + Traveling Light Packets -->
+    <g stroke="#223654" stroke-width="1.5" fill="none">
+      <path id="synL1" d="M 92 98 Q 195 72 285 130"/>
+      <path id="synL2" d="M 92 184 Q 195 204 285 152"/>
+      <path id="synR1" d="M 675 130 Q 765 72 868 98"/>
+      <path id="synR2" d="M 675 152 Q 765 204 868 184"/>
+    </g>
+
+    <!-- Input / Output Neural Nodes -->
+    <g font-size="9" font-weight="700" text-anchor="middle">
+      <rect x="34" y="82" width="66" height="28" rx="6" fill="#0b1326" stroke="#55e5ed" stroke-width="1.4"/>
+      <text x="67" y="100" fill="#55e5ed">AI / ML</text>
+
+      <rect x="34" y="170" width="66" height="28" rx="6" fill="#0b1326" stroke="#a692ff" stroke-width="1.4"/>
+      <text x="67" y="188" fill="#a692ff">ZERO-T</text>
+
+      <rect x="860" y="82" width="66" height="28" rx="6" fill="#0b1326" stroke="#22c55e" stroke-width="1.4"/>
+      <text x="893" y="100" fill="#22c55e">FASTAPI</text>
+
+      <rect x="860" y="170" width="66" height="28" rx="6" fill="#0b1326" stroke="#55e5ed" stroke-width="1.4"/>
+      <text x="893" y="188" fill="#55e5ed">VISION</text>
+    </g>
+
+    <!-- Animated Light Packets along Synapses -->
+    <g filter="url(#glowHero)">
+      <circle r="3.8" fill="#55e5ed"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#synL1"/></animateMotion></circle>
+      <circle r="3.8" fill="#a692ff"><animateMotion dur="2.7s" repeatCount="indefinite"><mpath href="#synL2"/></animateMotion></circle>
+      <circle r="3.8" fill="#22c55e"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#synR1"/></animateMotion></circle>
+      <circle r="3.8" fill="#55e5ed"><animateMotion dur="2.1s" repeatCount="indefinite"><mpath href="#synR2"/></animateMotion></circle>
+    </g>
+
+    <!-- Central Core Hub -->
+    <rect x="278" y="66" width="404" height="148" rx="14" fill="#060b16" fill-opacity="0.9" stroke="#233756" stroke-width="1.4"/>
+
+    <!-- 15A: RGB Chromatic Glitch Title Layers -->
+    <text x="480" y="124" text-anchor="middle" font-size="40" font-weight="800" fill="#55e5ed" opacity="0.45" letter-spacing="-0.5">
+      PRANAV PUSHYA
+      <animate attributeName="x" values="480;483;478;480;480" keyTimes="0;0.04;0.08;0.12;1" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="480" y="124" text-anchor="middle" font-size="40" font-weight="800" fill="#a692ff" opacity="0.45" letter-spacing="-0.5">
+      PRANAV PUSHYA
+      <animate attributeName="x" values="480;477;482;480;480" keyTimes="0;0.04;0.08;0.12;1" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="480" y="124" text-anchor="middle" font-size="40" font-weight="800" fill="#f0f5ff" letter-spacing="-0.5">
+      PRANAV PUSHYA
+    </text>
+
+    <text x="480" y="154" text-anchor="middle" font-size="12" font-weight="700" fill="#55e5ed" letter-spacing="1.6">
+      AI/ML &amp; CYBERSECURITY BUILDER
+    </text>
+    <text x="480" y="176" text-anchor="middle" font-size="10.5" fill="#94a3b8" letter-spacing="0.8">
+      FULL-STACK EXECUTION · CHITKARA UNIVERSITY
+    </text>
+
+    <!-- 8C Redacted Proof Pill Strip -->
+    <rect x="306" y="188" width="348" height="20" rx="4" fill="#0d172a" stroke="#233552"/>
+    <text x="480" y="201.5" text-anchor="middle" font-size="9.5" font-weight="600" fill="#cbd5e1" letter-spacing="0.8">
+      PATENT FILED · AZURE DP-900 · NEXHACK 2.0 · PECATHON
+    </text>
+
+    <!-- Bottom Status Footer inside Banner -->
+    <text x="480" y="262" text-anchor="middle" font-size="10" fill="#7d8ea6" letter-spacing="1.6">
+      ZERO TRUST OT/SCADA &nbsp;·&nbsp; CLIENT-SIDE PII DEFENSE &nbsp;·&nbsp; COMPUTER VISION
+    </text>
+  </g>
+
+  <!-- 15A: Perimeter Racing Neon Circuit Border -->
+  <rect x="1" y="1" width="958" height="278" rx="15" fill="none" stroke="#1e2c44" stroke-width="1.2"/>
+  <rect x="1" y="1" width="958" height="278" rx="15" fill="none" stroke="url(#neonBorder)" stroke-width="2.2"
+        stroke-dasharray="160 720" filter="url(#glowHero)">
+    <animate attributeName="stroke-dashoffset" from="0" to="1760" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
