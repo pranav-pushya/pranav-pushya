@@ -50,13 +50,13 @@
 
     <!-- 8B: Dual Oscilloscope Signal Waves (Background) -->
     <g opacity="0.45">
-      <path d="M0,222 Q120,192 240,222 T480,222 T720,222 T960,222" fill="none" stroke="#55e5ed" stroke-width="1.6">
+      <path d="M0,224 Q120,206 240,224 T480,224 T720,224 T960,224" fill="none" stroke="#55e5ed" stroke-width="1.6">
         <animate attributeName="d" dur="5s" repeatCount="indefinite"
-                 values="M0,222 Q120,192 240,222 T480,222 T720,222 T960,222;M0,222 Q120,252 240,222 T480,222 T720,222 T960,222;M0,222 Q120,192 240,222 T480,222 T720,222 T960,222"/>
+                 values="M0,224 Q120,206 240,224 T480,224 T720,224 T960,224;M0,224 Q120,242 240,224 T480,224 T720,224 T960,224;M0,224 Q120,206 240,224 T480,224 T720,224 T960,224"/>
       </path>
-      <path d="M0,228 Q140,255 280,228 T560,228 T840,228 T960,228" fill="none" stroke="#a692ff" stroke-width="1.2">
+      <path d="M0,228 Q140,244 280,228 T560,228 T840,228 T960,228" fill="none" stroke="#a692ff" stroke-width="1.2">
         <animate attributeName="d" dur="6.5s" repeatCount="indefinite"
-                 values="M0,228 Q140,255 280,228 T560,228 T840,228 T960,228;M0,228 Q140,200 280,228 T560,228 T840,228 T960,228;M0,228 Q140,255 280,228 T560,228 T840,228 T960,228"/>
+                 values="M0,228 Q140,244 280,228 T560,228 T840,228 T960,228;M0,228 Q140,212 280,228 T560,228 T840,228 T960,228;M0,228 Q140,244 280,228 T560,228 T840,228 T960,228"/>
       </path>
     </g>
 
@@ -138,7 +138,7 @@
 
     <!-- Bottom Status Footer inside Banner -->
     <text x="480" y="262" text-anchor="middle" font-size="10" fill="#7d8ea6" letter-spacing="1.6">
-      ZERO TRUST OT/SCADA &nbsp;·&nbsp; CLIENT-SIDE PII DEFENSE &nbsp;·&nbsp; COMPUTER VISION
+      ZERO TRUST OT/SCADA &#160;·&#160; CLIENT-SIDE PII DEFENSE &#160;·&#160; COMPUTER VISION
     </text>
   </g>
 

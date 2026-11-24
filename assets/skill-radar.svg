@@ -15,6 +15,14 @@
     <linearGradient id="barGreen" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#15803d"/><stop offset="100%" stop-color="#22c55e"/>
     </linearGradient>
+    <linearGradient id="barPulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clipBar1"><rect x="315" y="68" width="552" height="8" rx="4"/></clipPath>
+    <clipPath id="clipBar2"><rect x="315" y="104" width="527" height="8" rx="4"/></clipPath>
+    <clipPath id="clipBar3"><rect x="315" y="140" width="564" height="8" rx="4"/></clipPath>
   </defs>
 
   <rect x="0.5" y="0.5" width="959" height="189" rx="12" fill="#070c17" stroke="#22324d" stroke-width="1.2"/>
@@ -44,10 +52,10 @@
 
     <!-- Axis Labels -->
     <text x="0" y="-68" text-anchor="middle" font-size="9.5" font-weight="700" fill="#55e5ed">AI / ML</text>
-    <text x="78" y="-14" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a692ff">SECURITY</text>
+    <text x="65" y="-12" text-anchor="start" font-size="9.5" font-weight="700" fill="#a692ff">SECURITY</text>
     <text x="52" y="64" text-anchor="middle" font-size="9.5" font-weight="700" fill="#22c55e">BACKEND</text>
     <text x="-52" y="64" text-anchor="middle" font-size="9.5" font-weight="700" fill="#cbd5e1">VISION</text>
-    <text x="-78" y="-14" text-anchor="middle" font-size="9.5" font-weight="700" fill="#eab308">DEVOPS</text>
+    <text x="-65" y="-12" text-anchor="end" font-size="9.5" font-weight="700" fill="#eab308">DEVOPS</text>
   </g>
 
   <line x1="285" y1="18" x2="285" y2="172" stroke="#1d2b44" stroke-dasharray="4 4"/>
@@ -61,22 +69,25 @@
     <text x="315" y="60">AI SYSTEMS &amp; VISION <tspan fill="#7d8ea6">(Groq · RAG · MediaPipe · PyTorch · OpenCV)</tspan></text>
     <text x="928" y="60" text-anchor="end" fill="#55e5ed" font-weight="700">90%</text>
     <rect x="315" y="68" width="613" height="8" rx="4" fill="#131f33"/>
-    <rect x="315" y="68" width="552" height="8" rx="4" fill="url(#barCyan)">
-      <animate attributeName="width" from="0" to="552" dur="1.4s" fill="freeze"/>
+    <rect x="315" y="68" width="552" height="8" rx="4" fill="url(#barCyan)"/>
+    <rect x="315" y="68" width="90" height="8" fill="url(#barPulse)" clip-path="url(#clipBar1)">
+      <animate attributeName="x" values="225;870" dur="2.6s" repeatCount="indefinite"/>
     </rect>
 
     <text x="315" y="96">CYBERSECURITY &amp; PRIVACY <tspan fill="#7d8ea6">(Zero Trust · Kali · Client-Side PII Masking)</tspan></text>
     <text x="928" y="96" text-anchor="end" fill="#a692ff" font-weight="700">86%</text>
     <rect x="315" y="104" width="613" height="8" rx="4" fill="#131f33"/>
-    <rect x="315" y="104" width="527" height="8" rx="4" fill="url(#barPurple)">
-      <animate attributeName="width" from="0" to="527" dur="1.6s" fill="freeze"/>
+    <rect x="315" y="104" width="527" height="8" rx="4" fill="url(#barPurple)"/>
+    <rect x="315" y="104" width="90" height="8" fill="url(#barPulse)" clip-path="url(#clipBar2)">
+      <animate attributeName="x" values="225;850" dur="3.1s" repeatCount="indefinite"/>
     </rect>
 
     <text x="315" y="132">BACKEND &amp; CLOUD <tspan fill="#7d8ea6">(FastAPI · React · Neon · Render · Supabase · Firebase)</tspan></text>
     <text x="928" y="132" text-anchor="end" fill="#22c55e" font-weight="700">92%</text>
     <rect x="315" y="140" width="613" height="8" rx="4" fill="#131f33"/>
-    <rect x="315" y="140" width="564" height="8" rx="4" fill="url(#barGreen)">
-      <animate attributeName="width" from="0" to="564" dur="1.8s" fill="freeze"/>
+    <rect x="315" y="140" width="564" height="8" rx="4" fill="url(#barGreen)"/>
+    <rect x="315" y="140" width="90" height="8" fill="url(#barPulse)" clip-path="url(#clipBar3)">
+      <animate attributeName="x" values="225;880" dur="2.8s" repeatCount="indefinite"/>
     </rect>
   </g>
 
