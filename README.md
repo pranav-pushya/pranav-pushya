@@ -37,6 +37,17 @@ A software simulation of an industrial OT/SCADA water pipeline secured using Zer
 
 [Explore Repository ↗](https://github.com/armaankhan2905/CTRL-ALT-TRUST)
 
+<details>
+<summary><strong>🔍 System Architecture &amp; Zero-Trust Spec</strong></summary>
+
+```
+[Sensors & Actuators] ──(mTLS)──> [Zero Trust Gateway] ──(JWT/RBAC)──> [FastAPI Simulation] ──(WebSocket)──> [React Telemetry UI]
+```
+* **Segmentation:** Micro-perimeters around critical water pressure pump controls preventing lateral network movement.
+* **Anomaly Detection:** Real-time telemetry monitoring identifying unauthorized valve states and packet injection.
+* **Presentation:** Built and showcased at **NexHack 2.0 (IITM Janakpuri)** national hackathon.
+</details>
+
 </td>
 <td width="50%" valign="top">
 
@@ -51,6 +62,17 @@ A privacy-first Chrome Extension and web app that scans and redacts sensitive PI
 * **Tech:** `JavaScript` · `Canvas API` · `RAG Scanning` · `Chrome Extensions`
 
 [Explore Repository ↗](https://github.com/PECathon-2026/05-HoneyPoters)
+
+<details>
+<summary><strong>🔍 PII Detection &amp; Zero-Leakage Pipeline</strong></summary>
+
+```
+[DOM Text/Image Input] ──> [Offscreen Canvas Blackout Masking] ──> [Verhoeff / Luhn Checksum Engine] ──> [Local RAG Masking]
+```
+* **Zero Server Leakage:** 100% on-device client processing ensures compliance with strict data protection regulations.
+* **Mathematical Checksums:** Verhoeff and Luhn checksum validation eliminate false-positive PII redactions.
+* **Hackathon Track:** Built at **PECathon 2026 (Punjab Engineering College)**.
+</details>
 
 </td>
 </tr>
@@ -69,6 +91,13 @@ A browser-based, hands-on platform designed for safe ethical hacking and cyberse
 
 [Explore Repository ↗](https://github.com/pranav-pushya/Pwnbox) · [Live App ↗](https://pwnbo-x.web.app)
 
+<details>
+<summary><strong>🔍 Platform Sandbox &amp; Module Architecture</strong></summary>
+
+* **Zero-Setup Environment:** In-browser CTF challenges covering SQL injection, XSS, and social engineering attack vectors.
+* **Safe Practice:** Isolated execution environment allowing students to understand exploit mechanisms without legal risks.
+</details>
+
 </td>
 <td width="50%" valign="top">
 
@@ -83,6 +112,13 @@ A unified workspace consolidating developer profiles, Kanban workflow tracking, 
 * **Tech:** `React` · `Firebase Auth & Firestore` · `Groq API`
 
 [Explore Repository ↗](https://github.com/pranav-pushya/Scaffold) · [Live App ↗](https://scaffold-app-90278.web.app/)
+
+<details>
+<summary><strong>🔍 Growth Engine &amp; AI Workspace Specs</strong></summary>
+
+* **Modular Architecture:** Combines developer identity, Kanban task tracking, ATS resume export, and Groq-powered AI assistance into one unified workflow.
+* **Real-Time Data:** Firestore sync with optimistic UI updates and instant portfolio generation.
+</details>
 
 </td>
 </tr>
@@ -126,7 +162,9 @@ A unified workspace consolidating developer profiles, Kanban workflow tracking, 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Neon](https://img.shields.io/badge/Neon-00E599?style=for-the-badge&logo=neon&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
@@ -146,18 +184,79 @@ A unified workspace consolidating developer profiles, Kanban workflow tracking, 
 
 <img src="assets/signal.svg" width="100%" alt="" />
 
-## 🏆 Achievements, Roles & Hackathons
+## 📊 Real-Time GitHub Intelligence
 
-* **Patent Filed:** Multi-sensor fusion approach for automated waste classification (*SwachhSort AI*).
-* **Certifications:** Microsoft Certified: Azure Data Fundamentals (**DP-900**).
-* **Leadership & Community:** Technical Team Member at **Code 2 Chill** (mentoring peers and organizing developer hackathons).
-* **Hackathons & Competitions:**
-  * **NexHack 2.0 (IITM Janakpuri)** — *TRUSTGRID* (Zero Trust OT/SCADA Simulation)
-  * **PECathon (Punjab Engineering College)** — *PrivacyLens* (Client-Side PII Defense)
-  * **Hack Helix (Thapar University)** — Product Owner, Team *OOPtimal Minds* (*CogniFlow*)
-  * **Adobe University Hackathon 2026**
-  * **Graviton (CGC Mohali)**
-  * **ET AI Hackathon**
+<div align="center">
+
+[![Pranav's GitHub Stats](https://github-readme-stats.vercel.app/api?username=pranav-pushya&show_icons=true&bg_color=0b1326&border_color=26344c&title_color=55e5ed&text_color=aab8ce&icon_color=a692ff&rank_icon=github)](https://github.com/pranav-pushya)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=pranav-pushya&background=0b1326&border=26344c&stroke=55e5ed&ring=55e5ed&fire=55e5ed&currStreakNum=f0f5ff&sideNums=f0f5ff&currStreakLabel=55e5ed&sideLabels=aab8ce&dates=64748b)](https://github.com/pranav-pushya)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pranav-pushya&layout=compact&bg_color=0b1326&border_color=26344c&title_color=55e5ed&text_color=aab8ce)](https://github.com/pranav-pushya)
+
+</div>
+
+<img src="assets/signal.svg" width="100%" alt="" />
+
+## 🏆 Verified Credentials & Hackathon Honors
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📜 Patent Filed
+**Multi-Sensor Fusion Waste Classification AI**  
+Two-stage vision pipeline (YOLO11m + MobileNetV2 + Depth Anything V2 pseudo-LiDAR) driving robotic sorting arms.  
+`Intellectual Property` · `Applied AI/ML`
+
+</td>
+<td width="50%" valign="top">
+
+### 🛡️ NexHack 2.0 (IITM Janakpuri)
+**National Hackathon · TRUSTGRID**  
+Led architecture and backend simulation for Zero Trust OT/SCADA industrial network defense.  
+`National Hackathon` · `Zero Trust Architecture`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔒 PECathon 2026 (PEC)
+**Punjab Engineering College · PrivacyLens**  
+Engineered client-side PII detection and offscreen canvas blackout masking engine with zero server leaks.  
+`Security Track` · `Privacy Engineering`
+
+</td>
+<td width="50%" valign="top">
+
+### ⚡ Hack Helix (Thapar University)
+**Product Owner · Team OOPtimal Minds**  
+Directed project scope and built CogniFlow, a fatigue-aware UI adapter driven by MediaPipe face landmarks.  
+`Team Lead` · `Computer Vision`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ☁️ Microsoft Certified
+**Azure Data Fundamentals (DP-900)**  
+Demonstrated core foundational knowledge of cloud data services and relational/non-relational architecture on Azure.  
+`Global Certification` · `Cloud & Data`
+
+</td>
+<td width="50%" valign="top">
+
+### 🤝 Code 2 Chill
+**Technical Team Member & Mentor**  
+Mentoring developer peers, conducting code reviews, and organizing university-level hackathon operations.  
+`Community Leadership` · `Mentorship`
+
+</td>
+</tr>
+</table>
+
+> **Other Hackathons & Competitions:** Adobe University Hackathon 2026 &bull; Graviton (CGC Mohali) &bull; ET AI Hackathon.
 
 <img src="assets/signal.svg" width="100%" alt="" />
 
